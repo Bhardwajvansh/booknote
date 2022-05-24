@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body onload="fetchbook(),fetchnote()" >
+    <header id="header">
+        <h2>BookNote</h2>
+    </header>
+    <div id="container">
+        <div id="bookmarks">
+            <h2 id="hedding">Bookmarks</h2>
+            <p>Site Name</p>
+            <input id="input1" class="input"  type="text" placeholder="website name">
+            <p>URL</p>
+            <input id="input2" class="input" type="url" placeholder="website URL">
+            <button id="btn1" class="btn" type="submit" >Submit</button>
+        </div>
+        <div id="notes">
+            <h2 id="hedding">Notes</h2>
+            <p>headding</p>
+            <input id="input3" class="input" type="text" placeholder="enter headding">
+            <p>content</p>
+            <input id="input4" class="input" type="text" placeholder="content">
+            <button id="btn2" type="submit" class="btn">Submit</button>
+        </div>
+    </div>
+    <hr>
+    <div id="main">
+        <div class="half" id="book-mark">
+            <div class="half" id="bookmark">
+                <h4 id="booktitle">website</h4>
+                <div>
+                    <button id="visit" class="visit btn" >Visit</button>
+                    <button id="delete1" class="btn">DELETE</button>
+                </div>
+            </div>
+        </div>
+        <div class="half" id="note-mark">
+            <div class="half">
+                <h4 id="notetitle" >title</h4>
+                <p id="notecontent">content</p>
+                <button id="delete2" class="btn">DELETE</button>
+            </div>
+
+        </div>
+    
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

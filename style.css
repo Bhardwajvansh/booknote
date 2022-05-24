@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+    height: 6vh;
+    border: 1px solid rgb(175, 175, 175);
+    background-color: rgb(246, 243, 243);
+}
+#container{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bookmarks{
+    margin: 40px 20px;
+    background-color: rgb(246, 243, 243);
+    padding: 40px;
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 2px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}  
+#notes{
+    margin: 40px 20px;
+    background-color: rgb(246, 243, 243);
+    padding: 40px;
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 2px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}  
+.input{
+    width: 80%;
+    padding: 5px 10px;
+    margin: 5px ;
+}
+#hedding{
+    margin-bottom: 5px;
+}
+.btn{
+    padding: 10px 20px;
+    margin: 5px  20px;
+    background-color: rgb(251, 118, 70);
+    color: wheat;
+    border: 0;
+    text-decoration: none;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.visit{
+    background-color: rgb(82, 70, 251);
+    color: white;
+}
+.half{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#main{
+    display: none;
+    width: 100%;
+    height: 40vh;
+    align-items: start;
+}
+#bookmark{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    border: 1px solid rgb(204, 204, 204);
+    margin: 20px 60px;
+    background-color: rgb(246, 243, 243);
+}
+#booktitle{
+    padding: 20px;
+}
+#bookcontent{
+    padding-bottom: 20px;
+}
+#notetitle{
+    padding: 20px;
+}
+#notecontent{
+    padding-bottom: 20px;
+    margin: 0px 15px;
+}
+#note{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    border: 1px solid rgb(204, 204, 204);
+    margin: 20px 60px;
+    background-color: rgb(246, 243, 243);
+}
+
+@media screen and (max-width: 500px){
+    #header{
+        font-size: 2vh;
+    }
+    #container{
+        flex-wrap: wrap;
+    }
+    #bookmarks{
+        margin: 0px 20px;
+        margin-bottom: 20px;
+    }
+    #notes{
+        margin: 0px 20px;
+        margin-bottom: 20px;
+    }
+    #main{
+        margin-top: 150px;
+    }
+    .btn{
+        padding: 4px 10px;
+        margin: 2px  10px;
+    }
+    #notecontent{
+        font-size: 1.1vh;
+    }
+}
